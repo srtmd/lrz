@@ -251,3 +251,15 @@
   new PureCounter();
 
 })()
+
+function play1() {
+        var audio = document.getElementById("umha");
+        audio.volume = 0.8;
+        audio.play();
+
+      }
+function play2() {
+        var audio = document.getElementById("deve");
+        audio.volume = 0.3;
+        audio.play();
+      }

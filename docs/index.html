@@ -118,10 +118,10 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href="">Leo Reis</a></h1>
+      <h1 onclick="play1()">Leo Reis</h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>Um youtuber de <span>CS2</span>.</h2>
+      <h2 onclick="play2()">Um youtuber de <span>CS2</span>.</h2>
 
       <!--nav id="navbar" class="navbar">
         <ul>
@@ -135,12 +135,23 @@
 
       <div class="social-links">
         <a href="https://www.instagram.com/leoreizz" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://discord.gg/GHg9YAj7uG" class="discord"><i class="bi bi-discord"></i></a>
-        <a href="https://www.youtube.com/@leoreizZz" class="youtube"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.twitch.tv/leoreiz" class="twitch"><i class="bi bi-twitch"></i></a>
+        <a href="https://discord.gg/vtNjRGTqXX" class="discord"><i class="bi bi-discord"></i></a>
+        <a href="https://www.youtube.com/@leoreiz" class="youtube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.twitch.tv/leoreis_cs" class="twitch"><i class="bi bi-twitch"></i></a>
         <a href="https://livepix.gg/leoreizzz" class="donate"><i class="bi bi-currency-dollar"></i></a>
       </div>
+      <br>
+      <audio id="rad" src="https://www.partyviberadio.com:8061" autoplay="true" controls="true" volume="0.1"><audio>
+    <script>
+        var audio = document.getElementById("rad");
+        audio.volume = 0.1;
 
+        function play() {
+            document.getElementById("rad").play();
+        }
+
+        play();
+    </script>
     </div>
   </header><!-- End Header -->
 
@@ -158,6 +169,8 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <audio id="umha" src="assets/mp3/umha.mp3"></audio>
+  <audio id="deve" src="assets/mp3/vc.mp3"></audio>
   <script src="assets/js/main.js"></script>
 
 </body>

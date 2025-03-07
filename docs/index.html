@@ -1,44 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Leo Reis</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--link href="assets/css/style.css" rel="stylesheet"-->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="prefetch" as="script" href="https://cdn.jsdelivr.net/npm/tsparticles@1.39.0/tsparticles.pathseg.min.js">
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
-
-<body>
   <script src="junk/tsparticles.min.js"></script>
+  <script src="junk/particles.min.js"></script>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      background: #040404 url("assets/img/bg.jpg") top right no-repeat;
+      color: #f5f5f7;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+    }
+    h1, h2 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 48px;
+    }
+    a {
+      text-decoration: none;
+      color: #8833f5;
+    }
+    p {
+      font-size: 14px;
+      color: #d0d0d0;
+    }
+    .container {
+      max-width: 500px;
+      padding: 20px;
+      border-radius: 12px;
+      background: rgba(75, 75, 75, 0.08);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+    }
+    .social-links a {
+      color: #f5f5f7;
+      font-size: 28px;
+      margin: 8px;
+      transition: 0.3s;
+    }
+    .social-links a:hover {
+      color: #6f00ff;
+    }
+    audio {
+      font-family: 'Montserrat', sans-serif;
+      width: 80%;
+      margin-top: 25px;
+      background: rgba(55, 55, 55, 0);
+      border-radius: 0px;
+      padding: 0px;
+      -webkit-transition:all 0.5s linear;
+      -moz-transition:all 0.5s linear;
+      -o-transition:all 0.5s linear;
+      transition:all 0.5s linear;
+      -moz-box-shadow: 2px 2px 4px 0px #2f1757;
+      -webkit-box-shadow:  2px 2px 4px 0px #2f1757;
+      box-shadow: 2px 2px 4px 0px #2f1757;
+      -moz-border-radius:7px 7px 7px 7px ;
+      -webkit-border-radius:7px 7px 7px 7px ;
+      border-radius:7px 7px 7px 7px ;
+    }
+    .credits {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 14px;
+      color: #f5f5f7;
+    }
+    @media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+  width: 90%;
+    padding: 15px;
+  }
+
+  .social-links a {
+    font-size: 25px;
+  }
+}
+    @media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+
+  .social-links a {
+    font-size: 23px;
+  }
+  .container {
+  max-width: 90%;
+  width: 100%;
+  padding: 20px;
+}
+}
+  </style>
+</head>
+<body>
   <script>
         tsParticles.load("tsparticles", {
         fpsLimit: 200,
         interactivity: {
             events: {
-            onClick: {
-                enable: false,
-                mode: "push"
-            },
             onHover: {
                 enable: true,
                 mode: "repulse"
@@ -46,136 +134,49 @@
             resize: true
             },
             modes: {
-            bubble: {
-                distance: 400,
-                duration: 2,
-                opacity: 0.8,
-                size: 40
-            },
-            push: {
-                quantity: 4
-            },
             repulse: {
                 distance: 200,
-                duration: 0.4
+                duration: 0.3
             }
             }
         },
         particles: {
-            color: {
-            value: "#6f00ff"
-            },
-            links: {
-            color: "#7300ff",
-            distance: 200,
-            enable: true,
-            opacity: 1,
-            width: 1
-            },
-            collisions: {
-            enable: true
-            },
-            move: {
-            direction: "none",
-            enable: true,
-            outMode: "bounce",
-            random: false,
-            speed: 3,
-            straight: false
-            },
-            number: {
-            density: {
-                enable: true,
-                value_area: 800
-            },
-            value: 25
-            },
-            opacity: {
-            value: 0.5
-            },
-            shape: {
-            type: "circle"
-            },
-            size: {
-            random: true,
-            value: 5
-            }
+            color: { value: "#6f00ff" },
+            links: { color: "#6f00ff", distance: 200, enable: true, opacity: 1, width: 1 },
+            collisions: { enable: true },
+            move: { direction: "none", enable: true, outMode: "bounce", speed: 3 },
+            number: { density: { enable: true, value_area: 700 }, value: 25 },
+            opacity: { value: 0.5 },
+            shape: { type: "circle" },
+            size: { random: true, value: 5 }
         },
         detectRetina: true
         });
-
-        $(".rainx").hide();
-
-        function startup() {
-            
-            $(".start").fadeOut(200);
-            $(".rainx").fadeIn(400);
-        }
-    </script>
-    
-    <script src="junk/particles.min.js"></script>
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-
-      <h1 onclick="play1()">Leo Reis</h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2 onclick="play2()">Um youtuber de <span>CS2</span>.</h2>
-
-      <!--nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link" href="#header">YouTube</a></li>
-          <li><a class="nav-link" href="#about">Discord</a></li>
-          <li><a class="nav-link" href="https://csgo-skins.com/?ref=LEOREIS">CSGO-SKINS</a></li>
-          <li><a class="nav-link" href="https://leoreiz.com/formulario">Formulário</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav--><!-- .navbar -->
-
-      <div class="social-links">
-        <a href="https://youtube.com/@leoreiz" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
-        <a href="https://twitch.tv/leoreis_cs" target="_blank" class="twitch"><i class="bi bi-twitch"></i></a>
-        <a href="https://instagram.com/leoreis_cs" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://tiktok.com/@leoreizzz" target="_blank" class="instagram"><i class="bi bi-tiktok"></i></a>
-        <a href="https://discord.gg/vtNjRGTqXX" target="_blank" class="discord"><i class="bi bi-discord"></i></a>
-        <a href="https://youtube.com/@leoreizz" target="_blank" class="youtube2"><i class="bi bi-youtube"></i></a>
-        <a href="https://livepix.gg/leoreizzz" target="_blank" class="donate"><i class="bi bi-currency-dollar"></i></a>
-        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3232232775" target="_blank" class="workshopmaps"><i class="bi bi-globe-americas"></i></a>
-      </div>
-      <br>
-      <audio id="rad" src="https://www.partyviberadio.com:8061" autoplay="true" controls="true" volume="0.1"><audio>
+  </script>
+  <div class="container text-center">
+    <h1 onclick="play1()">Leo Reis</h1>
+    <!--p onclick="play2()">Um youtuber de <span>CS2</span>.</p-->
+    <div class="social-links mt-4">
+      <a href="https://youtube.com/@leoreiz" target="_blank"><i class="bi bi-youtube"></i></a>
+      <a href="https://discord.gg/vtNjRGTqXX" target="_blank" class="discord"><i class="bi bi-discord"></i></a>
+      <a href="https://twitch.tv/leoreis_cs" target="_blank"><i class="bi bi-twitch"></i></a>
+      <a href="https://instagram.com/leoreis_cs" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://tiktok.com/@leoreizzz" target="_blank" class="instagram"><i class="bi bi-tiktok"></i></a>
+      <a href="https://youtube.com/@leoreizz" target="_blank" class="youtube2"><i class="bi bi-youtube"></i></a>
+      <a href="https://livepix.gg/leoreizzz" target="_blank" class="donate"><i class="bi bi-currency-dollar"></i></a>
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3232232775" target="_blank"><i class="bi bi-steam"></i></a>
+    </div>
+    <audio id="rad" src="https://www.partyviberadio.com:8061" autoplay="true" controls="true" volume="0.1"></audio>
     <script>
         var audio = document.getElementById("rad");
-        audio.volume = 0.1;
-
+        audio.volume = 0.05;
         function play() {
             document.getElementById("rad").play();
         }
-
         play();
     </script>
-    </div>
-  </header><!-- End Header -->
-
-  <div class="credits">
-    by <a href="https://s2.rip/">nx :)</a>
   </div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <audio id="umha" src="assets/mp3/umha.mp3"></audio>
-  <audio id="deve" src="assets/mp3/vc.mp3"></audio>
+  <div class="credits">by <a href="https://s2.rip/" target="_blank">nx :)</a></div>
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
